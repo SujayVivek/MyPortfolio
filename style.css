@@ -308,9 +308,7 @@ justify-content: center;
     padding-top:90px;
     padding-bottom:40px;
     min-height:100vh;
-    background-position: center;
     
-    background-size: cover;
     
     display: flex;
     justify-content: center;
@@ -318,9 +316,10 @@ justify-content: center;
     flex-direction: column;
 }
 #skills h1{
-    font-size:3rem;
+    font-size:1.6rem;
     text-align: center;
     margin:0;
+    color:#DB5461
 }
 #skills h3{
     font-size:1rem;
@@ -331,9 +330,10 @@ justify-content: center;
     align-items: unset;
     display: grid;
     gap:20px;
-    grid-template-columns:auto auto auto auto auto auto;
-    grid-template-rows: 200px 150px 180px;
+    grid-template-columns:15% 15% 15% 15% 15% 15%;
+    grid-template-rows: 200px 200px 180px;
     margin:50px 60px;
+    padding:5px;
     /* max-width:80rem; */
 }
 .skill-grid>div{
@@ -383,10 +383,10 @@ border: 1px solid rgba(255, 255, 255, 0.3);
     margin-left: 20px;
 }
 .skill-1 img{
-    width:200px;
+    width:100px;
 }
 .skill-2 img{
-    width:200px;
+    width:100px;
 }
 .skill-3 img{
     height:120px;
