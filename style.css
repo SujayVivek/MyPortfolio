@@ -1,5 +1,5 @@
 *{
-    margin: 0;
+    margin: 0 2px;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
@@ -40,6 +40,7 @@ font-weight: 500;
 margin-left:35px;
 }
 
+
 .navbar a.active, .navbar a:hover{
     background: linear-gradient(45deg, #f06,#3cf);
     -webkit-text-fill-color: transparent;
@@ -62,6 +63,9 @@ margin-left:35px;
     font-weight: 700;
     padding:1% 0;
     line-height: 1.2;
+}
+.home-content h1 span{
+    color: yellow;
 }
 .home-content h3{
     font-size: 32px;
@@ -189,10 +193,219 @@ margin-left:35px;
 .home-img .glowing-circle::after{
 content:'';
 position:absolute;
-width:280px;
+width:380px;
 height:380px;
 background: pink;
 border-radius: 50%;
 background: #0c1022;
 
+}
+.glowing-circle span{
+    position:absolute;
+    width:410px;
+    height:410px;
+    background:linear-gradient(#f06,#3cf);
+    border-radius: 50%;
+}
+.glowing-circle .image{
+    position: relative;
+    width:380px;
+    height:380px;
+    
+    border-radius: 50%;
+    z-index: 1;
+    overflow: hidden;
+}
+.image img{
+    position:absolute;
+    left:50%;
+    top:30px;
+    transform:translateX(-50%);
+    
+    max-width:350px;
+    object-fit: cover;
+}
+/*.projects-section .projects{
+    font-size: 50px;
+    display:inline-block;
+    align-items: center;
+    position: absolute;    
+    font-weight: 700;
+    background-color: #3cf;
+}
+.projects-section .projects .title{
+    
+    transform: translate(40vw);
+
+}
+
+.projects-section .projects .cards{
+background: red;
+display: block;
+position: relative;
+
+
+}
+
+.projects-section .projects .card{
+    width:27vw;
+    height:40vh;
+    background: #3cf;
+    border-radius: 10%;
+}*/
+
+.projects-section .projects{
+    display: block;
+    background-color: rebeccapurple;
+    align-items: center;
+    font-size: 50px;
+    font-weight: 700;
+
+
+}
+.projects-section .projects .title, .achievements .titleAch{
+
+display: flex;
+justify-content: center;
+}
+.projects-section .projects .cards{
+    background: red;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+    
+    
+}
+.projects-section .projects .card{
+    width:30vw;
+    position: relative;;
+    height:30vw;
+    background: #3cf;
+    border-radius: 10%;
+    margin:10px;
+}
+.achievements{
+    display: block;
+    background-color:bisque;
+    align-items: center;
+    font-size: 50px;
+    font-weight: 700;
+    position: relative;
+    top: 100px;
+}
+/* .achievements .grid-container{
+    display: grid;
+    justify-content: space-around;
+}
+.achievements .grid-container .grid{
+    background: red;
+    width:30px;
+    height:30px;
+    margin:10px;
+} */
+#skills{
+    padding-top:90px;
+    padding-bottom:40px;
+    min-height:100vh;
+    background-position: center;
+    
+    background-size: cover;
+    
+    display: flex;
+    justify-content: center;
+    /* align-items:center; */
+    flex-direction: column;
+}
+#skills h1{
+    font-size:3rem;
+    text-align: center;
+    margin:0;
+}
+#skills h3{
+    font-size:1rem;
+    text-align: center;
+    color:#DB5461;
+}
+.skill-grid{
+    align-items: unset;
+    display: grid;
+    gap:20px;
+    grid-template-columns:auto auto auto auto auto auto;
+    grid-template-rows: 200px 150px 180px;
+    margin:50px 60px;
+    /* max-width:80rem; */
+}
+.skill-grid>div{
+    background: rgba(255, 255, 255, 0.73);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(1.8px);
+-webkit-backdrop-filter: blur(1.8px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    
+}
+.skill-grid div div{
+    margin-left:30px;
+    margin-right:20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: last baseline;
+}
+.skill-1{
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-column-end: span 4;
+}
+.skill-2{
+    grid-column-end:span 2
+}
+.skill-3{
+    grid-column-end: span 2;
+}
+.skill-4{
+    grid-column-end: span 2;
+}
+.skill-5{
+    grid-column-end: span 2;
+    grid-row-end: span 2;
+}
+.skill-6{
+    grid-column-end:span 4;
+}
+.skill-grid img{
+    background-color: transparent;
+    margin-left: 20px;
+}
+.skill-1 img{
+    width:200px;
+}
+.skill-2 img{
+    width:200px;
+}
+.skill-3 img{
+    height:120px;
+}
+.skill-4 img{
+    height:150px;
+}
+.skill-5 img{
+    transform: translateY(-40px);
+    width:140px;
+}
+.skill-6 img{
+    height:150px;
+    margin-left:40px;
+}
+.skill-grid h2{
+    color: #db5461;
+}
+.skill-grid p{
+    color: #000;
+    font-size: 1rem;
 }
